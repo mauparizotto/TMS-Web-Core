@@ -1,0 +1,15 @@
+program AtividadeWeb;
+
+uses
+  Vcl.Forms,
+  WEBLib.Forms,
+  UAtividade in 'UAtividade.pas' {Form1: TWebForm} {*.html};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
